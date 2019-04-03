@@ -1,0 +1,72 @@
+View of Data:
+    Data Models: a collection of conceptual tools for describing data, data relationships, data 
+            semantics, and consistency constraints. 
+        Relational Model:
+            A collection of tables to represent both data and relationsips among data. Each 
+          table has multiple columns. Tables are know as relations. --record-based model. 
+        Entity-Relationship Model:
+            E-R data model uses a collection of basic objs, called entities and relationships
+          among these objects
+        Semi-structured Data Model:
+            same type of data may have different sets of attributes
+        Object-Based Data Model
+
+Data abstraction:
+    Physical level: The lowest level to describe how the data are actualy stored
+    Logical level: The next level to describe what data are stored in the database and what relationships exist among data
+    View level: The highest level to describe part of the entire database. 
+
+Instance and Schemas:
+    instance: collection of information stored in the database at a particular moment
+    schema: The overall design of the database
+
+Database Languages:
+    data-definition language(DDL)
+    data-manipulation language(DML)
+
+    DDL:
+        Domain Constraints: domain of values that can be associated with certain attribute
+        Referential Integrity: a value that appears in one relation also appears in a certain set of attr
+        Authorization: read/insert/update/delete authorization
+
+    SQL data-definition language:
+        How SQL defines department table:
+            create table department
+                (dept_name  char(20)
+                 building   char(15)
+                 budget     numeric(12, 2));
+    DML:
+        Retrieval of information stored in the database
+        Insertion of new information into the database
+        Deletion of information from the databse
+        Modification of information stored in the database
+
+    two types of DML:
+        Procedural DMLs: specify what data are needed and how to get those data
+        Declarative DMLs what data are needed without specifying how to get those data
+
+    A query is a stmt requesting the retrieval of information
+    The portion of a DML that involves information retrieval is called a query language
+
+    The SQL data-manipulation language:
+        it is nonprocedural. 
+            select instructor.name
+            from instructor
+            where instructor.dept_name = 'History'
+
+    Storage Manager:
+        Authorization and integrity manager
+        Transaction manager
+        File manager
+        Buffer manager
+
+Structure of Relational Database:
+    A relational database consists of a collection of tables
+    A row in a table represents a relationship among a set of values
+    A tuple is simply a sequence of values
+
+For all relations r, the domains of all attributes of r must be atomic.
+A domain is atomic if elements of the domain are considered to be indivisible units
+
+Database Schema
+Keys
