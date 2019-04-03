@@ -1,0 +1,36 @@
+Database prupose:
+    Abstract away the underlying design
+
+some place that we least expect db
+    blockchain: socialism version database
+    git
+
+level of abstraction:
+    Physical, logical, view
+
+Instance and schema
+
+Data model
+    Relational
+    E-R
+    object-oriented
+    Document(semi-structured)
+
+DML
+    Procedural
+    Declare
+
+SQL is not procedural
+    Write an ETL job
+     
+DDL: Any consistency defined here
+
+DB architecture
+    Server/client
+    Distributed
+
+Relational Model
+    superkey
+    primary key
+    foreign key
+    
