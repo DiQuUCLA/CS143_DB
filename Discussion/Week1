@@ -1,0 +1,40 @@
+What is Database and RDBMS:
+    Raltional Database Management System
+    A weel organized collection of various forms of data
+    View, add, update, and delete data
+
+Why do we need database:
+    Integrity and Redundancy
+    SysAdmin
+    Lack of Atomicity
+    Concurrent Access
+    Security
+
+What is Data model:
+    Conceptual tool that describes data element and relationship
+
+Relational Data Model:
+    What is relation: A collection of relations(tables)
+    Each table consists of rows and columns
+    column: Attribute
+    row: record, tuple
+    superkey: set of one or more attributes that uniquely identifies a tuple
+    Any superset of superkey will be a superkey
+    candidates keys: A superkey with the fewest attribute
+    Primary key: A candidate key chosen by the database designer
+    composite primary keys: primary key with multiple attributes
+    Foreign key: An attribute that ties the tuples of two relations together into one
+                 A foreign key in a relation r1 does not uniquely identify a tuple in r1, but
+                 does in the referred relation r2
+
+DDL: Data Definition Language
+    Define the datbase structure or schema
+    CREATE obj in database
+    ALTER the structure of the database
+    DROP the obj from databse
+DML: Data Management Language
+    SELECT - retrieve data from the databse
+    INSERT - insert data into a table 
+    UPDATE - updates
+    DELETE - deletes
+
