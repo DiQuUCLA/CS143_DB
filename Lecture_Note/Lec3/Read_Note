@@ -1,0 +1,25 @@
+Relational Query Languages
+
+Query language is a language in which a user requests information from the database.
+Category: imperative, functional, declarative
+
+
+Imperative querry language: user instructs the system to perform a specific seq of op on databse
+to computer the desired result
+
+Functional query language: The computation is expressed as the evaluation of functions that may
+operate on data in the database or on the results of other functions
+
+Declarative query language: the user describes the desired information w/ specifing seq of ops
+the desired information is described using some form of mathematical logic
+
+
+
+Relational Algebra:
+    A set of ops that take one or two relations as input and produce a new relation as result
+
+    Select: select tuples that satisfy a given predicate, and:^, or:v
+    Project: Want part of the attributes but not the others. Like only grab few columns
+    Composition of Relational Operations
+    Cartesian-product
+    Join: 

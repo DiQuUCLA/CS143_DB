@@ -1,0 +1,12 @@
+Select: select operator select tuples not attributes
+    SQL SELECT:
+        SELECT title
+        FROM youtube_videos
+        WHERE likes > dislikes
+        AND views > 1000000
+        AND cat_id = 24 
+
+SQL SELECT is actually project
+    WHERE is actually select
+
+
