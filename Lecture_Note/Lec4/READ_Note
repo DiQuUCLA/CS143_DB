@@ -1,0 +1,32 @@
+SQL:
+    Basic Types
+        char: fixed-length character string
+        varchar(n): A variable-length character string with max length n
+        int
+        smallint
+        numeric(p, d) A fixed-point number with user-specified precision
+            p -> #digits(plus a sign)
+            d -> #digits to the right of the decimal point
+        real, double precision
+        float
+
+    Basic Schema Definition:
+        key command: create table
+        e.g.:
+            create table department
+                (dept_name varchar(20),
+                 building  varchar(15),
+                 budget    numeric(12,2),
+                 primary key (dept_name));
+        Integrity constraints:
+            primary key(A1, A2....)
+            foreign key(A1, A2....) references s: value of foreign key must correspond
+                to values of PK in relationship s
+            not null
+        drop table r: deletes all info about r, so r doesn't exist anymore
+        delete from r: empty the table, but table is still there
+
+        alter table: add or remove attributes from table
+            alter table r add A D: A -> attribute name, D -> attribute data type
+            alter table r drop A
+

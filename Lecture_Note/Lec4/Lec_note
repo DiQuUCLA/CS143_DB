@@ -1,0 +1,27 @@
+ANSI SQL Types
+    int
+    smallint
+    numeric(p,d): Special value NaN exist, NaN == NaN return true, and NaN is greater than any other value. 
+                    They are generally very slow. So if no specific requirement, better use double precision
+    real, double precision
+    float(n)
+    varchar(n) and char(n): Assign string longer than n will result in error unless the extra char are all 
+                    space and it will be truncated
+    bytea: Binary Data
+    boolean: 3 nebulous forms: TRUE FALSE unknown(represented as NULL)
+    bit(n), bit varying(n): bitstring
+
+    timestamp(without time zone): 8 bytes
+    timestamp(with time zone)
+    date for representing, well, dates: 4 bytes
+    time (time without time zone). 8 bytes
+    timetz(with time zone) 12 bytes
+    interval: 16 bytes, interms of Year, Mon, Day, hour, min, sec
+    epoch: 1970-01-01
+    now: current date/time
+    today: midnight today
+    tomorrow: midnight tomorrow, so is yesterday
+    allballs: 00:00:00.00 UTC and only valid for time
+    
+    ENUM 
+    Geometric data type
