@@ -1,0 +1,23 @@
+Join
+    R1 = R2 * R3 under condition c
+Natural Join
+    Join two relations using common attribute names
+    if we don't have common attribute names, it becomes cartisian product
+Union
+    Concatenate two sets of tuples that have the same structure(not schema)
+So is intersection
+Aggregation:
+    G1 Y F(A1) (R1)
+    G1: attribute(s)
+    apply the function F on attribute A1 in relation R1
+
+Evaluation Order:
+    1. From
+    2. Where
+    3. Group by
+    4. Having
+    5. Order
+    6. Select
+
+Tables in From clause:
+    cross product, not natural join

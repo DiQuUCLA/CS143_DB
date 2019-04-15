@@ -1,0 +1,33 @@
+Select DISTINCT:
+    It will remove duplicate on all columns
+Aggregation:
+    Each column in select must appear in GROUP BY or in some aggregate function
+Where comes before group by
+like and %, __:
+    FOO% match any string with prefix FOO
+    __ match any string with length 2
+    __% any string whose length >= 2
+
+CASE, NULLIF, COALESCE
+    CASE class_level
+        WHEN 'USR' THEN 'SEnior'
+        ...
+        ELSE 'UNKNOWN'
+    NULLIF (major, 'Undeclared') #Turn the value 'undeclared' in major cloumn to NULL
+    COALESCE(midterm_score, 0) #Turn the value NULL to 0 in  midterm_score column
+
+Adding New Rows:
+    INSERT INTO relation VALUES('val1', 'val2',...,'valn')
+    Or specify the columns with relation
+    INSERT INTO relation (col1name, col2name) VALUES ('val1, val2,...,valn),
+                (val_1, val_2,...,val_n)
+
+Modifying Rows:
+    UPDATE relation
+    SET column = new_value
+    WHERE some_conditional_istrue;
+
+Joins Querying Multiple Relations
+    Natural Join
+    Inner Join
+    l
