@@ -1,0 +1,18 @@
+FULL(OUTER) JOIN
+
+Nested Queries:
+    SELECT
+        major,
+        average
+    FROM (
+        SELECT
+            major,
+            AVG(gpa)::decimal(3,2) AS average
+        FROM bruinbase
+        GROUP BY major
+    )
+    WHERE average > 3.95
+
+Constraints
+Trigger:
+    EVENT CONDITION ACTION
