@@ -1,0 +1,62 @@
+Natural Join:
+    natural join only considers those pairs of tuples with the same value on
+    those attributes that appears in both relations
+    SQL:
+        select name, course_id
+        from student natural join takes;
+
+    For more than 2 attributes' natural join:
+        select name, title
+        from student natural join takes, course
+        where takes.course_id = course.course_id
+    suppose student doesn't have the attribute course_id
+    then this is different from
+        select name, title
+        from student natural join take natural join course;
+    Since natural join will only consider the all common attributes, but 
+    student doesn't have attribute course_id
+
+    introduce join ... using
+    select name, title
+    from (student natural join takes) join course using (course_id);
+    It will specify which attributes are used during join(Cartisian product)
+
+Join Conditions:
+    Similar to using, we can do join ... on(on is like where)
+        select *
+        from student join takes on student.ID = takes.ID
+    It is equivalent to following:
+        select *
+        from student, takes
+        where student.ID = takes.ID;
+
+Outer Joins:
+    Outer join perservers those tuples that would be lost in a natural join
+    
+    left outer join: perservers tuples only in the relation named before the op
+    The right outer join preserves tuples only in the relation named after op
+    Full outer join preserves all tuples
+
+    The remaining in other relation will be NULL
+
+    select *
+    from student natural left outer join takes;
+
+
+Views:
+    SQL allows a virtual relation to be defined by a query
+    A virtual relation is not precomputed and stored 
+    It is computed by executing the query when it is used
+    In SQL:
+        create view v as <query expression>;
+        e.g.
+        create view faculty as
+            select ID, name, dept_name
+            from instructor;
+
+Transactions:
+    a sequence of query and/or update statements.
+    Commit work:
+        the updates become permanent in the database
+    Rollback work:
+        the current transaction will be rolled back
